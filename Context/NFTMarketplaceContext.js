@@ -5,13 +5,13 @@ import { useRouter } from "next/router";
 import axios from "axios";
 import { create as ipfsHttpClient } from "ipfs-http-client";
 
-const projectId = "2IXeQ5jI4sEPXJbKCwIJaVB1MBJ";
-const projectSecretKey = "9f0ccb1e0d5bad8bede90b55d2c0a7ce";
+const projectId = "2J6XyqJXZHF6KsFODx4kS9Il2ji";
+const projectSecretKey = "17cb4a139e994f013417525108d83424";
 const auth = `Basic ${Buffer.from(`${projectId}:${projectSecretKey}`).toString(
   "base64"
 )}`;
 
-const subdomain = "https://inseparable.infura-ipfs.io";
+const subdomain = "https://inseparablenftmarketplace.infura-ipfs.io";
 
 const client = ipfsHttpClient({
   host: "ipfs.infura.io",
